@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="menuTab">
+         <attribute name="title">
+          <string>Меню</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="searchEdit">
+            <property name="placeholderText">
+             <string>Поиск блюда...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="menuList"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="addToCartButton">
+            <property name="text">
+             <string>Добавить в корзину</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="cartTab">
+         <attribute name="title">
+          <string>Корзина</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0" colspan="2">
+           <widget class="QListWidget" name="cartList"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="totalLabel">
+            <property name="text">
+             <string>Итого: 0 руб.</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="checkoutButton">
+            <property name="text">
+             <string>Оформить заказ</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="adminTab">
+         <attribute name="title">
+          <string>Админ</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="adminTable"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="addDishButton">
+            <property name="text">
+             <string>Добавить блюдо</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="editPriceButton">
+            <property name="text">
+             <string>Изменить цену</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="deleteDishButton">
+            <property name="text">
+             <string>Удалить блюдо</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="statsTab">
+         <attribute name="title">
+          <string>Статистика</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="1">
+           <widget class="QChartView" name="categoryChartView"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QChartView" name="salesChartView"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="exportChartsButton">
+            <property name="text">
+             <string>Экспорт графиков</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="statsLabel">
+            <property name="text">
+             <string>Средний чек: -- руб.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="themeToggle">
+        <property name="text">
+         <string>Сменить тему</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">QtCharts/QChartView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

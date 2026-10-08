@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "Борщ", "category": "Супы", "price": 250, "imagePath": "C:/QtProjects/caffeapp/images/borsh.png", "available": true},
+  {"id": 2, "name": "Цезарь", "category": "Салаты", "price": 320, "imagePath": "C:/QtProjects/caffeapp/images/caesar.png", "available": true},
+  {"id": 3, "name": "Стейк", "category": "Горячее", "price": 890, "imagePath": "C:/QtProjects/caffeapp/images/steak.png", "available": true},
+  {"id": 4, "name": "Капучино", "category": "Напитки", "price": 180, "imagePath": "C:/QtProjects/caffeapp/images/cappuccino.png", "available": true},
+  {"id": 5, "name": "Чизкейк", "category": "Десерты", "price": 290, "imagePath": "C:/QtProjects/caffeapp/images/cheesecake.png", "available": true}
+]

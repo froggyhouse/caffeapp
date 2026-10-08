@@ -1,0 +1,5 @@
+[
+  {"date": "2026-07-01", "dishId": 1, "dishName": "Борщ", "price": 250, "category": "Супы", "quantity": 2},
+  {"date": "2026-07-02", "dishId": 3, "dishName": "Стейк", "price": 890, "category": "Горячее", "quantity": 1},
+  {"date": "2026-07-03", "dishId": 5, "dishName": "Чизкейк", "price": 290, "category": "Десерты", "quantity": 3}
+]
